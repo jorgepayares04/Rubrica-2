@@ -1,0 +1,30 @@
+.historial {
+    max-height: 50px;
+    animation: all 0.3s ease-in-out;
+    text-align: right;
+    
+}
+
+.historialpadre{
+    max-height: 488px;
+    overflow-y: auto;
+}
+
+.fila {
+    display: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding: 4px;
+  }
+  .centrar {
+    margin-right: -15px;
+    margin-left: 69px;
+}
+.btnigual {
+    margin-right: 23px;
+    margin-left: 19px;
+    width: 100%;
+}
+.center{
+    margin-left: 25%;
+}

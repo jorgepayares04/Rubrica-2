@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculadora</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<div class="container mt-5 center">
+    <div class="row d-flex">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="text-center">Calculadora</h4>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <input type="text" class="form-control mb-3;" id="display" disabled>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 d-flex" style="justify-content: center;">
+                            <button onclick="toggleTabla()" class="btn btn-warning m-2">Mostrar/Ocultar</button>
+                            <button onclick="limpiarHistorial()" class="btn btn-warning m-2">Borrar</button>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="fila">
+                                <div class="col-md-4">
+                                    <button class="btn btn-secondary btn-lg btn-block" onclick="agregarNumero(1)">1</button>
+                                </div>
+                                <div class="col-md-4">
+                                    <button class="btn btn-secondary btn-lg btn-block" onclick="agregarNumero(2)">2</button>
+                                </div>
+                                <div class="col-md-4">
+                                    <button class="btn btn-secondary btn-lg btn-block" onclick="agregarNumero(3)">3</button>
+                                </div>
+                                <div class="col-md-4">
+                                    <button class="btn btn-info btn-lg btn-block" onclick="agregarOperacion('+')">+</button>
+                                </div>
+                            </div>
+                            <div class="fila">
+                                <div class="col-md-4">
+                                    <button class="btn btn-secondary btn-lg btn-block" onclick="agregarNumero(4)">4</button>
+                                </div>
+                                <div class="col-md-4">
+                                    <button class="btn btn-secondary btn-lg btn-block" onclick="agregarNumero(5)">5</button>
+                                </div>
+                                <div class="col-md-4">
+                                    <button class="btn btn-secondary btn-lg btn-block" onclick="agregarNumero(6)">6</button>
+                                </div>
+                                <div class="col-md-4">
+                                    <button class="btn btn-info btn-lg btn-block" onclick="agregarOperacion('-')">-</button>
+                                </div>
+                            </div>
+                            <div class="fila">
+                                <div class="col-md-4">
+                                    <button class="btn btn-secondary btn-lg btn-block" onclick="agregarNumero(7)">7</button>
+                                </div>
+                                <div class="col-md-4">
+                                    <button class="btn btn-secondary btn-lg btn-block" onclick="agregarNumero(8)">8</button>
+                                </div>
+                                <div class="col-md-4">
+                                    <button class="btn btn-secondary btn-lg btn-block" onclick="agregarNumero(9)">9</button>
+                                </div>
+                                <div class="col-md-4">
+                                    <button class="btn btn-info btn-lg btn-block" onclick="agregarOperacion('*')">*</button>
+                                </div>
+                            </div>
+                            <div class="fila">
+                                <div class="col-md-4">
+                                    <button class="btn btn-secondary btn-lg btn-block" onclick="agregarNumero('.')">.</button>
+                                </div>
+                                <div class="col-md-4">
+                                    <button class="btn btn-secondary btn-lg btn-block" onclick="agregarNumero(0)">0</button>
+                                </div>
+                                <div class="col-md-4">
+                                    <button class="btn btn-danger" style="width: 100%; height: 100%;" onclick="borrar()">AC</button>
+                                </div>
+                                <div class="col-md-4">
+                                    <button class="btn btn-info btn-lg btn-block" onclick="agregarOperacion('/')">/</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 my-2">
+                            <button class="btn btn-danger btn-lg btn-block" onclick="calcularResultado()">=</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="row historialpadre" id="historial">
+                <ul class="list-group historial" id="historial"></ul>
+            </div>
+        </div>
+    </div>
+</div>
+                       
+
+                       
+<script src="calculadora.js"></script>
+
+                    
